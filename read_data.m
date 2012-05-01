@@ -1,5 +1,6 @@
 function data = read_data()
 
+fprintf('Reading data ...\n');
 fid = fopen('TrainingData.csv');
 fgetl(fid);
 
@@ -8,7 +9,7 @@ days = {'"Saturday"','"Sunday"','"Monday"','"Tuesday"','"Wednesday"','"Thursday"
 row_cnt = 0;
 
 while ~feof(fid)
-    row_cnt = row_cnt + 1
+    row_cnt = row_cnt + 1;
     line = fgetl(fid);
     C = strread(line,'%s','delimiter',',');
     for i=1:95
@@ -24,3 +25,4 @@ while ~feof(fid)
     end
 end
 
+fprintf('Read in %d rows\n', row_cnt);

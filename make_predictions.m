@@ -6,8 +6,11 @@ data = read_data();
 
 test_predictions = zeros(2100,39);
 
-matlabpool open 4
-options = statset('UseParallel','always');
+options = statset()
+
+%%% Uncomment the lines below to train models in parallel
+% matlabpool open 4
+% options = statset('UseParallel','always');
 
 for p=1:10
     prediction_offset = prediction_offsets(p);
