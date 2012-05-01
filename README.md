@@ -1,8 +1,9 @@
-Winning Code for the EMC Data Science Global Hackathon (Air Quality Prediciton)
+Winning Code for the EMC Data Science Global Hackathon (Air Quality Prediction)
 -------------------------------------------------------------------------------
 
-Competition page: https://www.kaggle.com/c/dsg-hackathon
-Blog post on methodology: ADD LINK HERE
+*Competition page:* https://www.kaggle.com/c/dsg-hackathon
+
+*Blog post on methodology:* ADD LINK HERE
 
 To train and recreate the winning submission (may be slightly different, as the random number generator didn't have a static seed),
 
